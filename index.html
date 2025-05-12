@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pandora Futuristic</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/src/img/logo.png" alt="Logo" height="100" />
+      </div>
+      <nav>
+        <span><img src="/src/img/burger_icon.png" /></span>
+        <ul class="nav-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Experience</a></li>
+          <li><a href="#">Spaceship</a></li>
+          <li><a href="#">Crew</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="section-content">
+          <p>
+            Experience space<br />with comfort,<br />elegance, and a view<br />like
+            no OTHER.
+          </p>
+          <div class="spacer"></div>
+          <h1>Rise<br />Beyond<br />Earth</h1>
+          <div class="button-container">
+            <button class="hero-button reserve-btn">Reserve Now</button>
+            <button class="hero-button contact-btn">Contact Us</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission Section -->
+      <section class="mission">
+        <h2>Our Mission</h2>
+        <div class="section-content">
+          <p>
+            Established in 2035, Pandora Futuristic is dedicated to curating the
+            ultimate space travel experience for the discerning individual. Our
+            mission is rooted in the belief that this extraordinary journey
+            should be within reach.
+          </p>
+          <div class="mission-image">
+            <img src="/src/img/Space_Capsule.png" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="experience">
+        <h2>The Experience</h2>
+        <div class="section-content">
+          <div class="mission-image">
+            <img src="/src/img/expierience_bg.png" />
+          </div>
+          <p>
+            Forget rigorous training and complex procedures. At Pandora
+            Futuristic, we've redefined space travel for effortless enjoyment.
+            Your journey begins the moment you arrive. Simply bring your space
+            passport, camera, and a small carry-on. We handle the rest, ensuring
+            a seamless and luxurious check-in process.
+            <br /><br />
+            Once aboard our state-of-the-art vessel, your only task is to relax,
+            soak in the breathtaking views, and create unforgettable memories.
+            Experience the cosmos in unparalleled comfort and ease.
+          </p>
+        </div>
+      </section>
+
+      <!-- Our Vessel Section -->
+      <section class="vessel">
+        <div class="section-content">
+          <h2>Our Vessel</h2>
+          <p>
+            The VenusFA202 is designed and operated with the highest standards
+            of safety and quality. It is fully regulated under the FAA (Federal
+            Aviation Administration) under FAR Part 460 - Human Space Flight
+            Requirements, and adheres to guidelines set forth by NASA and the US
+            Coast Guard. Quality is paramount in everything we do.
+            <br /><br />
+            Our dedicated team of architects and engineers has meticulously
+            designed and built the VenusFA202 with your safety and luxurious
+            experience as their top priorities.
+            <br /><br />
+            Book your extraordinary journey now.
+          </p>
+        </div>
+      </section>
+
+      <!-- Founders Section -->
+      <section id="owner" class="owner">
+        <h2>The Founder</h2>
+        <div class="owner_profile">
+          <img src="src/img/Kon.png" alt="Owner" />
+          <p>
+            <b>Konstantin</b>, a former NASA Astronaut with a distinguished
+            career spanning missions in 2015, 2020, and 2023, brings invaluable
+            insight from the frontier of space.
+          </p>
+        </div>
+        <div class="owner_profile">
+          <img src="src/img/Phoebe.png" alt="Owner" />
+          <p>
+            Complementing this is <b>Phoebe</b>, a brilliant scientist who
+            dedicated a decade to groundbreaking space projects with NASA,
+            ensuring our voyages are grounded in scientific excellence.
+          </p>
+        </div>
+        <div class="owner_hidden">
+          <p>
+            <b>Konstantin</b>, a former NASA Astronaut with a distinguished
+            career spanning missions in 2015, 2020, and 2023, brings invaluable
+            insight from the frontier of space.<br />Complementing this is
+            <b>Phoebe</b>, a brilliant scientist who dedicated a decade to
+            groundbreaking space projects with NASA, ensuring our voyages are
+            grounded in scientific excellence.<br />Embark on a journey with
+            Pandora Futuristic and discover the cosmos in unparalleled comfort
+            and style.
+          </p>
+        </div>
+      </section>
+
+      <!-- Our Crew Section -->
+      <section id="crew" class="crew">
+        <div class="crew-section">
+          <h2>Meet the Crew</h2>
+          <div class="crew-container" id="crewContainer">
+            <div class="crew-card" onclick="selectProfile(this)">
+              <div class="profile-img"><img src="/src/img/Crew_4.png" /></div>
+              <h3>Dr. John Straus</h3>
+              <p>Environmental Control and Life Support</p>
+            </div>
+            <div class="crew-card" onclick="selectProfile(this)">
+              <div class="profile-img"><img src="/src/img/Crew_1.png" /></div>
+              <h3>Sophia Nakamura</h3>
+              <p>Flight Systems Design and Analysis</p>
+            </div>
+            <div class="crew-card" onclick="selectProfile(this)">
+              <div class="profile-img"><img src="/src/img/Crew_5.png" /></div>
+              <h3>Logan Patel</h3>
+              <p>Capsule Manufacturing and Development</p>
+            </div>
+            <div class="crew-card" onclick="selectProfile(this)">
+              <div class="profile-img"><img src="/src/img/Crew_2.png" /></div>
+              <h3>Dr. Leila Hassan</h3>
+              <p>Launch and Marine Retrieval Operations</p>
+            </div>
+            <div class="crew-card" onclick="selectProfile(this)">
+              <div class="profile-img"><img src="/src/img/Crew_3.png" /></div>
+              <h3>Ava Moreau</h3>
+              <p>Safety Operations</p>
+            </div>
+            <div class="crew-card" onclick="selectProfile(this)">
+              <div class="profile-img"><img src="/src/img/Crew_6.png" /></div>
+              <h3>Zane Maccagnano</h3>
+              <p>Deputy Chief Technology Officer</p>
+            </div>
+          </div>
+
+          <div class="dots" id="dotsContainer">
+            <span class="arrow arrow-left" onclick="scrollCrew(-1)"
+              >&#8592;</span
+            >
+            <span class="dot active-dot" onclick="jumpToSlide(0)"></span>
+            <span class="dot" onclick="jumpToSlide(1)"></span>
+            <span class="dot" onclick="jumpToSlide(2)"></span>
+            <span class="dot" onclick="jumpToSlide(3)"></span>
+            <span class="dot" onclick="jumpToSlide(3)"></span>
+            <span class="dot" onclick="jumpToSlide(3)"></span>
+            <spam class="arrow arrow-right" onclick="scrollCrew(1)"
+              >&#8594;</spam
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- News Section -->
+      <section id="news" class="news">
+        <h2>Latest News</h2>
+        <div class="news-container">
+          <div class="news-card">
+            <img src="/src/img/SpaceCapsule.png" alt="News Image" />
+            <div class="news-card-content">
+              <h3>
+                Space Perspective Successfully Completes Development Flight 2
+              </h3>
+              <p>
+                The flight on September 15 marks milestones in space tourism
+                with first of their kind innovations in marine spaceport
+                technology, spacecraft design, and flight safety ...
+              </p>
+            </div>
+          </div>
+          <div class="news-card">
+            <img src="/src/img/LuxuriousSpaceLounge.png" alt="News Image" />
+            <div class="news-card-content">
+              <h3>
+                Space Perspective co-founder Jane Poynter on space tourism:
+                There's a huge market here
+              </h3>
+              <p>
+                Space Perspective co-founder and co-CEO Jane Poynter discusses
+                space tourism, arguing the market is completely 'untapped.'
+              </p>
+            </div>
+          </div>
+          <div class="news-card">
+            <img
+              src="https://nypost.com/wp-content/uploads/sites/2/2024/01/oreo-encouraging-fans-discover-world-75360069.jpg?resize=1024,576&quality=75&strip=all"
+              alt="News Image"
+            />
+            <div class="news-card-content">
+              <h3>
+                Oreo launches new Space Dunk cookies — with a literally
+                out-of-this-world contest
+              </h3>
+              <p>
+                Oreo’s newest cookie is out of this world — and the brand wants
+                you to be, too. America’s favorite cookie is starting off the
+                new year with the launch of a galaxy-inspired limited-edition
+                cookie.
+              </p>
+            </div>
+          </div>
+          <div class="news-card">
+            <img
+              src="https://d.newsweek.com/en/full/2291697/mercedes-maybach-eqs-suv-space-persepctive.webp?w=790&f=a2613e5edf6c9cd44ca0bdaa06ef9c29"
+              alt="News Image"
+            />
+            <div class="news-card-content">
+              <h3>
+                Partnership Has Mercedes Reimagining Space Travel as a Luxury
+                Experience
+              </h3>
+              <p>
+                There's no Mercedes floating around in Space like there is a
+                Tesla, but soon space travelers will be able to escape Earth's
+                atmosphere in Maybach style.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact Section -->
+      <section id="contact" class="contact">
+        <div class="contact-container">
+          <h2>Contact Information</h2>
+          <p>
+            Any question or remarks?<br />
+            Just write us a message!
+          </p>
+
+          <div class="contact-icons">
+            <div>
+              <span><img src="/src/img/phone.svg" /></span>
+              <p>+1012 3456 789</p>
+            </div>
+            <div>
+              <span><img src="/src/img/mail.svg" /></span>
+              <p>demo@gmail.com</p>
+            </div>
+            <div>
+              <span><img src="/src/img/website.svg" /></span>
+              <p>www.pandorafuturistic.com</p>
+            </div>
+            <div>
+              <span><img src="/src/img/location.svg" /></span>
+              <p>132 Dartmouth Street<br />Boston, MA, USA</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+          <input type="email" placeholder="Email" />
+          <input type="tel" placeholder="Phone Number" />
+
+          <p><strong>Select Subject?</strong></p>
+          <div class="subject-options">
+            <label
+              ><input type="radio" name="subject" checked /> General
+              Inquiry</label
+            >
+            <label><input type="radio" name="subject" /> Support</label>
+            <label><input type="radio" name="subject" /> Feedback</label>
+            <label><input type="radio" name="subject" /> Other</label>
+          </div>
+
+          <textarea rows="1" placeholder="Write your message..."></textarea>
+          <button type="submit">Send Message</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="logo-footer">
+          <img src="/src/img/logo.png" alt="Logo" height="100" />
+        </div>
+        <div class="footer-icons">
+          <h3>Reach us</h3>
+          <div>
+            <span><img src="/src/img/phone.svg" /></span>
+            <p>+1012 3456 789</p>
+          </div>
+          <div>
+            <span><img src="/src/img/mail.svg" /></span>
+            <p>demo@gmail.com</p>
+          </div>
+          <div>
+            <span><img src="/src/img/location.svg" /></span>
+            <p>132 Dartmouth Street<br />Boston, MA, USA</p>
+          </div>
+        </div>
+        <div class="footer-social-media">
+          <h3>Follow us</h3>
+          <a href="#"><img src="/src/img/icons8-facebook.svg" /></a>
+          <a href="#"><img src="/src/img/icons8-x.svg" /></a>
+          <a href="#"><img src="/src/img/icons8-instagram.svg" /></a>
+          <a href="#"><img src="/src/img/icons8-linkedin.svg" /></a>
+          <a href="#"><img src="/src/img/icons8-youtube.svg" /></a>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <nav>
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Experience</a>
+            <a href="#">Spaceship</a>
+            <a href="#">Crew</a>
+            <a href="#">News</a>
+            <a href="#">Contact Us</a>
+          </nav>
+        </div>
+        <div class="footer-laws">
+          <h3>Legal</h3>
+          <nav>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+          </nav>
+        </div>
+      </div>
+      <br />
+      <p>&copy; 2025 Pandora Futuristic Space Travel. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function selectProfile(card) {
+        const cards = document.querySelectorAll(".crew-card");
+        cards.forEach((c) => c.classList.remove("active"));
+        card.classList.add("active");
+      }
+    </script>
+  </body>
+</html>

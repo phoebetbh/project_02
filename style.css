@@ -1,0 +1,1093 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+:root {
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+
+  --color-background: #040c14;
+  --color-text: #f8f8f2;
+  --color-text-secondary: #292828;
+
+  --font-heading: "Inter" sans-serif;
+  --font-heading-alt: "Poppins" sans-serif;
+  --font-main: "Poppins" sans-serif;
+  --font-mono: "Fira Code" monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  font-family: var(--font-heading-alt);
+  font-weight: 700;
+}
+
+h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+p {
+  font-family: "Orbitron", sans-serif;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Hero section with background image */
+section.hero {
+  background-image: url("/src/img/hero_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: 30% 45%;
+}
+
+/* Mission section with background image */
+section.mission {
+  background-image: url("/src/img/Space_Capsule.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Experience section with background image */
+section.experience {
+  background-image: url("/src/img/expierience_bg.png");
+  background-size: 150%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 80vh;
+  margin-bottom: 5rem;
+}
+
+/* Vessel section with background image */
+section.vessel {
+  background-image: url("/src/img/vessel_bg.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Content inside sections */
+.section-content {
+  position: relative; /* ensures above background */
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  max-width: 100%; /* relative for responsiveness */
+  color: white;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.section-content p {
+  max-width: 30rem;
+}
+
+/* Headings and paragraphs */
+h1,
+h2 {
+  margin: 0 0 10px 0; /* bottom margin in px */
+}
+h1 {
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* Logo at top-left corner inside hero section */
+section.hero .logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+}
+
+section.hero .logo-img {
+  height: 60px;
+  width: auto; /* maintain aspect ratio */
+}
+
+/* Headings and paragraph styles inside hero */
+section.hero h1,
+section.hero p {
+  text-align: left;
+  align-self: flex-start;
+  margin-left: 10px;
+}
+
+/* Paragraph specific styles in hero */
+section.hero p {
+  line-height: 1.7;
+  width: 33%;
+  max-width: 33%;
+  margin-top: 220px;
+  font-size: 0.8rem;
+}
+
+.spacer {
+  height: 10px; /* adjust as needed */
+}
+
+/* Container to center buttons */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* space between buttons, optional */
+  margin-top: auto; /* adjust as needed */
+  margin-bottom: 0.5rem;
+}
+
+/* Style for the buttons */
+.hero-button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px; /* curved edges */
+  background-color: rgba(0, 0, 0, 0.2); /* black with 80% transparency */
+  color: #ffffff; /* white text */
+  font-family: "Orbitron", sans-serif; /* use your font */
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Optional: hover effects for buttons */
+.hero-button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+section.hero .section-content {
+  display: flex;
+  flex-direction: column;
+  /* Change this to align items at the top without space between */
+  justify-content: flex-start; /* or remove this line, as default is flex-start */
+  height: 100%;
+}
+
+section.mission .section-content,
+section.experience .section-content,
+section.vessel .section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* align left */
+  justify-content: flex-start; /* align top */
+  height: 90vh;
+  text-align: left; /* ensure text is left aligned */
+}
+
+section.mission p,
+section.experience p,
+section.vessel p {
+  line-height: 1.7;
+  margin-top: 20px; /* or adjust as needed */
+  margin-bottom: 0; /* optional, reset if needed */
+  padding: 0rem 1.5rem;
+}
+
+.mission-image img {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+}
+
+.section-content h2 {
+  padding-top: 5rem;
+}
+
+nav {
+  z-index: 1000;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--color-background);
+  gap: 4rem;
+  z-index: 100;
+}
+.nav-menu a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: var(--color-text);
+  text-decoration: none;
+  padding: 0.5rem 0.5rem;
+  text-transform: uppercase;
+}
+.nav-menu a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1.1rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.owner {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 4rem 0rem;
+}
+
+.owner p {
+  padding: 0rem 1rem;
+  font-weight: 300;
+}
+
+.owner_profile {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 2rem;
+}
+
+.owner_profile p {
+  font-size: 0.8rem;
+  padding: 0rem 1rem;
+  top: 0;
+  font-weight: 300;
+}
+.owner img {
+  width: 200px;
+  height: auto;
+}
+
+.owner_hidden {
+  margin: 0 auto;
+  text-align: left;
+  min-width: 1400px;
+  padding: 0rem 0rem;
+}
+
+.owner_hidden p {
+  text-align: left;
+  max-width: 30rem;
+  padding: 0rem 0rem 0rem 2rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+#crew {
+  background-image: url(/src/img/Crew_bg.jpg);
+  background-size: cover;
+  background-position: end;
+  min-height: 120vh;
+  min-width: 100%;
+}
+
+.crew-section {
+  max-width: 1400px;
+  padding: 0;
+  margin: 0rem auto 0 auto;
+}
+
+.crew {
+  padding: 4rem 0rem;
+  margin: 0 auto;
+}
+
+.crew-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: auto;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+
+.crew-card {
+  min-width: 150px;
+  min-height: 18.75rem;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 0.5rem;
+  padding: 0px 0px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.profile-img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  object-fit: cover;
+}
+
+.profile-img:hover {
+  filter: grayscale(0%);
+}
+.profile-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.active .profile-img {
+  filter: grayscale(0%);
+}
+
+.crew-card h3 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #292828;
+  margin: 2rem 0 5px 0;
+}
+
+.crew-card p {
+  color: #898989;
+  font-size: 0.8rem;
+  padding: 0rem 2rem;
+  top: 0;
+  font-weight: 300;
+  width: 12.5rem;
+  margin: auto;
+}
+
+/* Arrows */
+.arrow {
+  transform: translateY(-50%);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.arrow-left {
+  margin-right: 3rem;
+}
+
+.arrow-right {
+  margin-left: 3rem;
+}
+
+/* Dots */
+.dots {
+  text-align: center;
+  margin: 1.5rem auto;
+  max-width: 30rem;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #666;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active-dot {
+  background-color: #fff;
+}
+
+/* News Section */
+
+.news {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 4rem 0rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.news-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: start;
+  justify-content: start;
+  padding: 0rem 0rem;
+  margin: 0 1rem;
+  gap: 1.5rem;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  height: 10rem;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: left;
+  padding: 0px 0px;
+  cursor: pointer;
+  flex-shrink: 0;
+  max-width: 23rem;
+}
+
+.news-card img {
+  display: block;
+  object-fit: cover;
+  min-width: 10rem;
+  height: 10rem;
+  background-color: #d2694e; /* Orangener Bereich als Platzhalter */
+  border-radius: 10px 0px 0px 10px;
+}
+
+.news-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.news-card h3 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #292828;
+  padding: 1rem;
+  overflow: hidden;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2; /* Correct placement */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  line-height: 1.2rem;
+  max-height: calc(1.2rem * 3);
+}
+
+.news-card p {
+  color: #898989;
+  font-size: 0.8rem;
+  padding: 1rem 1rem 1rem 1rem;
+  font-weight: 300;
+  overflow: hidden;
+  display: -webkit-box;
+  line-clamp: 4;
+  -webkit-line-clamp: 4; /* Number of lines */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  line-height: 1.2rem;
+  max-height: calc(1.2rem * 5);
+}
+
+/* Contact Section */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 3rem 0rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  padding: 0rem 2rem;
+  margin: 0 auto;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.8rem;
+}
+
+.contact p {
+  font-size: 0.8rem;
+  padding: 0rem 2rem;
+  margin: auto;
+  top: 0;
+  font-weight: 300;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.contact-icons div {
+  min-width: 20rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: start;
+  justify-content: start;
+  background: #fff;
+  color: #000;
+  border-radius: 10px 10px 0 0;
+  padding: 3rem;
+  text-align: left;
+  max-width: 390px;
+  margin: 0;
+  gap: 2rem;
+}
+
+.contact-form p {
+  margin: 0;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  top: 0;
+  font-weight: 300;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: "Orbitron", sans-serif;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid #cac9c9;
+  outline: none;
+  font-size: 1rem;
+}
+
+.subject-options {
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  align-items: start;
+}
+
+.subject-options label {
+  font-family: "Orbitron", sans-serif;
+  display: flex;
+  align-items: start;
+  font-size: 0.7rem;
+  min-width: 8rem;
+}
+
+.subject-options input {
+  width: 2rem;
+  padding: 0.8rem;
+  border: none;
+  border-bottom: 1px solid #cac9c9;
+  outline: none;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
+
+.contact-form button {
+  width: 100%;
+  background: #041527;
+  color: #fff;
+  border: none;
+  padding: 1.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #1e3a5f;
+}
+
+/* Footer Section */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 2rem 0rem;
+}
+footer h3 {
+  padding: 0rem;
+  margin: 0;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.2rem;
+}
+footer p {
+  font-size: 0.8rem;
+  padding: 0rem 2rem;
+  margin: auto;
+  top: 0;
+  font-weight: 300;
+}
+
+.footer-container {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-flow: row wrap;
+  padding: 0rem 2rem;
+  margin: 0 auto;
+  gap: 1.5rem;
+}
+
+.logo-footer {
+  gap: 1rem;
+}
+
+.footer-icons span {
+  display: flex;
+  justify-content: start;
+  font-size: 0.8rem;
+  padding: 1rem 0rem;
+}
+
+.footer-icons p {
+  font-size: 0.8rem;
+  padding: 0rem 0rem 1rem 0rem;
+  top: 0;
+  font-weight: 300;
+}
+
+.footer-social-media {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-flow: column;
+  margin: 0;
+  gap: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-flow: column;
+  margin: 0;
+  gap: 1rem;
+}
+.footer-links a,
+.footer-laws a {
+  display: flex;
+  justify-content: start;
+  font-size: 0.8rem;
+  padding: 0.3rem 0rem;
+  font-family: "Orbitron", sans-serif;
+}
+
+.footer-laws {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-flow: column;
+  margin: 0;
+  gap: 1rem;
+}
+
+@media (width < 768px) {
+  header {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    gap: 5rem;
+    flex-direction: row;
+  }
+  .nav-menu {
+    display: none;
+  }
+
+  .mission-image img {
+    display: none;
+  }
+
+  .owner {
+    background-image: none;
+    min-height: 20vh;
+    padding-bottom: 0rem;
+  }
+
+  .owner_hidden {
+    display: none;
+  }
+
+  #crew {
+    background-image: none;
+    min-height: 30vh;
+    padding-bottom: 0rem;
+  }
+  .contact-form {
+    min-width: 100%;
+  }
+
+  .logo-footer {
+    min-width: 12rem;
+    margin: auto;
+  }
+  .footer-container div {
+    min-width: 10rem;
+    font-size: 0.6rem;
+  }
+
+  .footer-social-media img {
+    width: 2.5rem;
+    height: auto;
+  }
+}
+
+@media (width > 768px) {
+  header {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    gap: 5rem;
+    flex-direction: row;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  section.mission {
+    background-image: none;
+    max-height: 40rem;
+  }
+
+  section.mission h2 {
+    max-width: 1400px;
+    padding: 4rem 2rem 0rem 2rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+
+  section.mission .section-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    max-height: 40rem;
+  }
+
+  section.experience {
+    background-image: none;
+    max-height: 50rem;
+  }
+
+  section.experience h2 {
+    max-width: 1400px;
+    padding: 4rem 2rem 0rem 2rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+
+  section.experience .section-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    max-height: 50rem;
+  }
+
+  .owner {
+    background-image: none;
+    min-height: 20vh;
+    padding-bottom: 0rem;
+  }
+
+  .owner_profile img {
+    width: 300px;
+    height: auto;
+  }
+
+  .crew-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+  }
+
+  .owner_hidden {
+    display: none;
+  }
+
+  .crew-card {
+    min-width: 18rem;
+    min-height: 25rem;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 0.5rem;
+    padding: 0px 0px;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .news-card {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    height: 10rem;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: left;
+    padding: 0px 0px;
+    cursor: pointer;
+    flex-shrink: 0;
+    max-width: 27rem;
+  }
+
+  .profile-img {
+    width: 100%;
+    height: 15rem;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    object-fit: cover;
+  }
+
+  .contact-form {
+    min-width: 100%;
+  }
+  .contact-form input {
+    display: flex;
+    flex-flow: row wrap;
+    font-family: "Orbitron", sans-serif;
+    max-width: 46%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 1px solid #cac9c9;
+    outline: none;
+    font-size: 1rem;
+  }
+
+  .contact-form button {
+    max-width: 20rem;
+  }
+
+  .logo-footer {
+    min-width: 12rem;
+    margin: 0;
+  }
+}
+
+@media (width > 1399px) {
+  header {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0rem 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 8rem;
+    gap: 5rem;
+    flex-direction: row;
+  }
+
+  nav span {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+  }
+  section.hero {
+    background-image: url("/src/img/hero_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 110vh;
+    min-width: 100%;
+    margin-top: -10rem;
+  }
+
+  section.hero .section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 100vh;
+  }
+
+  section.hero h1 {
+    font-size: 7rem;
+    margin-top: 0rem;
+    padding: 0rem 2rem;
+  }
+  section.hero p {
+    font-size: 1.2rem;
+    padding: 0rem 2rem;
+    max-width: 50%;
+    margin-top: 13rem;
+  }
+
+  .button-container .hero-button {
+    margin-top: 0rem;
+    font-size: 1.2rem;
+    padding: 1.8rem 2.5rem;
+    min-width: 15rem;
+  }
+
+  section.mission {
+    background-image: none;
+    max-height: 40rem;
+  }
+
+  section.mission h2 {
+    max-width: 1400px;
+    padding: 4rem 2rem 0rem 2rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+
+  section.mission .section-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    max-height: 40rem;
+  }
+
+  section.experience {
+    background-image: none;
+    max-height: 50rem;
+  }
+
+  section.experience h2 {
+    max-width: 1400px;
+    padding: 4rem 2rem 0rem 2rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+
+  section.experience .section-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    max-height: 50rem;
+  }
+
+  section.vessel {
+    background-image: url("/src/img/vessel_bg.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 120vh;
+    min-width: 100%;
+    margin-bottom: 10rem;
+  }
+
+  .owner {
+    background-image: url("/src/img/Founder_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 120vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+  }
+  .owner h2 {
+    min-width: 1400px;
+    padding: 0rem 2rem;
+    margin: 0 auto;
+  }
+  .owner_profile {
+    display: none;
+  }
+
+  .owner_hidden {
+    display: flex;
+    padding-bottom: 4rem;
+    margin: 0 auto;
+  }
+
+  .owner_hidden p {
+    padding: 2rem;
+    background-color: rgba(62, 88, 117, 0.428);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    line-height: 1.5rem;
+    word-spacing: 0.2rem;
+    margin-left: 1.5rem;
+  }
+
+  .crew-section {
+    margin-top: -15rem;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    padding: 3rem 0rem;
+    width: 100%;
+  }
+
+  .contact-form {
+    min-width: 50%;
+    border-radius: 10px 0px 0px 10px;
+  }
+  .contact-container {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0rem;
+    text-align: center;
+  }
+
+  .footer-container div {
+    min-width: 15rem;
+  }
+}
