@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pandora Futuristic</title>
+    <!-- Tailwind CSS v4 via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: "#040C14",
+              text: "#F8F8F2",
+              "text-secondary": "#292828",
+            },
+            fontFamily: {
+              heading: ["Poppins", "sans-serif"],
+              headingAlt: ["Orbitron", "sans-serif"],
+              main: ["Poppins", "sans-serif"],
+              mono: ["Fira Code", "monospace"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-background text-text font-main leading-relaxed">
+    <!-- Header -->
+    <header class="max-w-7xl mx-auto flex items-center justify-between p-8">
+      <div class="flex items-center">
+        <img src="./src/img/logo.png" alt="Logo" class="h-24" />
+      </div>
+      <nav>
+        <ul class="flex space-x-8 text-sm uppercase font-sans">
+          <li>
+            <a href="#" class="hover:underline underline-offset-4">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="hover:underline underline-offset-4"
+              >About us</a
+            >
+          </li>
+          <li>
+            <a href="#experience" class="hover:underline underline-offset-4"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="#spaceship" class="hover:underline underline-offset-4"
+              >Spaceship</a
+            >
+          </li>
+          <li>
+            <a href="#crew" class="hover:underline underline-offset-4">Crew</a>
+          </li>
+          <li>
+            <a href="#news" class="hover:underline underline-offset-4">News</a>
+          </li>
+          <li>
+            <a href="#contact" class="hover:underline underline-offset-4"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="relative bg-[url('./src/img/hero_bg.png')] bg-center bg-cover min-h-screen"
+      >
+        <div
+          class="relative z-10 flex flex-col justify-start items-start max-w-6xl mx-auto h-full p-8 text-white"
+        >
+          <p class="font-headingAlt text-sm leading-tight max-w-xs mt-56">
+            Experience space<br />with comfort,<br />elegance, and a view<br />like
+            no OTHER.
+          </p>
+          <h1 class="font-headingAlt text-6xl leading-tight mt-4">
+            Rise<br />Beyond<br />Earth
+          </h1>
+          <div class="mt-auto mb-8 flex space-x-6">
+            <button
+              class="px-8 py-4 rounded-lg bg-black/20 hover:bg-black/30 font-headingAlt"
+            >
+              Reserve Now
+            </button>
+            <button
+              class="px-8 py-4 rounded-lg bg-black/20 hover:bg-black/30 font-headingAlt"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission Section -->
+      <section id="about" class="bg-cover bg-center py-24">
+        <div
+          class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between text-white px-8"
+        >
+          <div class="md:w-1/2">
+            <h2 class="font-headingAlt text-3xl mb-4">Our Mission</h2>
+            <p class="font-mono text-sm leading-relaxed">
+              Established in 2035, Pandora Futuristic is dedicated to curating
+              the ultimate space travel experience for the discerning
+              individual. Our mission is rooted in the belief that this
+              extraordinary journey should be within reach.
+            </p>
+          </div>
+          <div class="md:w-1/2 mt-8 md:mt-0">
+            <img
+              src="./src/img/Space_Capsule.png"
+              alt="Space Capsule"
+              class="w-64 h-64 object-cover rounded-lg"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section
+        id="experience"
+        class="bg-bottom bg-no-repeat bg-[length:150%] h-[80vh] mb-20"
+      >
+        <div
+          class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between h-full px-8 text-white"
+        >
+          <div class="md:w-1/2 order-2 md:order-1 mt-8 md:mt-0">
+            <p class="font-mono text-sm leading-relaxed">
+              Forget rigorous training and complex procedures. At Pandora
+              Futuristic, we've redefined space travel for effortless enjoyment.
+              Your journey begins the moment you arrive. Simply bring your space
+              passport, camera, and a small carry-on. We handle the rest,
+              ensuring a seamless and luxurious check-in process.
+              <br /><br />Once aboard our state-of-the-art vessel, your only
+              task is to relax, soak in the breathtaking views, and create
+              unforgettable memories. Experience the cosmos in unparalleled
+              comfort and ease.
+            </p>
+          </div>
+          <div class="md:w-1/2 order-1 md:order-2">
+            <img
+              src="./src/img/expierience_bg.png"
+              alt="Experience"
+              class="w-64 h-64 object-cover rounded-lg mx-auto"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Vessel Section -->
+      <section
+        id="spaceship"
+        class="bg-[url('./src/img/vessel_bg.png')] bg-bottom bg-cover bg-no-repeat h-screen mb-20"
+      >
+        <div
+          class="max-w-6xl mx-auto flex flex-col items-start justify-start h-full px-8 text-white"
+        >
+          <h2 class="font-headingAlt text-3xl mb-4 pt-10">Our Vessel</h2>
+          <p class="font-mono text-sm leading-relaxed max-w-[30rem]">
+            The VenusFA202 is designed and operated with the highest standards
+            of safety and quality. It is fully regulated under the FAA (Federal
+            Aviation Administration) under FAR Part 460 - Human Space Flight
+            Requirements, and adheres to guidelines set forth by NASA and the US
+            Coast Guard. Quality is paramount in everything we do.
+            <br /><br />Our dedicated team of architects and engineers has
+            meticulously designed and built the VenusFA202 with your safety and
+            luxurious experience as their top priorities. <br /><br />Book your
+            extraordinary journey now.
+          </p>
+        </div>
+      </section>
+
+      <!-- Founders Section -->
+      <section id="owner" class="py-24 px-8 max-w-6xl mx-auto">
+        <h2 class="font-headingAlt text-3xl mb-8 text-text">The Founder</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="flex items-start">
+            <img
+              src="./src/img/Kon.png"
+              alt="Konstantin"
+              class="w-48 h-auto rounded-lg"
+            />
+            <p class="ml-4 font-mono text-sm leading-relaxed">
+              <strong>Konstantin</strong>, a former NASA Astronaut with missions
+              in 2015, 2020, and 2023, brings invaluable insight from the
+              frontier of space.
+            </p>
+          </div>
+          <div class="flex items-start">
+            <img
+              src="./src/img/Phoebe.png"
+              alt="Phoebe"
+              class="w-48 h-auto rounded-lg"
+            />
+            <p class="ml-4 font-mono text-sm leading-relaxed">
+              <strong>Phoebe</strong>, a brilliant scientist who spent a decade
+              on NASA projects, ensuring our voyages are grounded in scientific
+              excellence.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Crew Section -->
+      <section
+        id="crew"
+        class="bg-[url('./src/img/Crew_bg.jpg')] bg-cover bg-end py-24 h-screen"
+      >
+        <div class="max-w-6xl mx-auto px-8">
+          <h2 class="font-headingAlt text-3xl text-white mb-8">
+            Meet the Crew
+          </h2>
+          <div class="flex overflow-x-auto space-x-4">
+            <div
+              onclick="selectProfile(this)"
+              class="min-w-auto min-h-[350px] max-w-60 bg-white rounded-lg cursor-pointer flex-shrink-0 crew-card"
+            >
+              <img
+                src="./src/img/Crew_4.png"
+                alt="Dr. John Straus"
+                class="w-60 h-auto object-cover rounded-lg mb-4 grayscale hover:grayscale-0 transition"
+              />
+              <h3
+                class="font-headingAlt text-sm text-text-secondary mb-2 px-10 pt-8"
+              >
+                Dr. John Straus
+              </h3>
+              <p class="text-xs text-gray-400 px-10">
+                Environmental Control and Life Support
+              </p>
+            </div>
+            <div
+              onclick="selectProfile(this)"
+              class="min-w-auto min-h-[350px] max-w-60 bg-white rounded-lg cursor-pointer flex-shrink-0 crew-card"
+            >
+              <img
+                src="./src/img/Crew_1.png"
+                alt="Sophia Nakamura"
+                class="w-60 h-auto object-cover rounded-lg mb-4 grayscale hover:grayscale-0 transition"
+              />
+              <h3
+                class="font-headingAlt text-sm text-text-secondary mb-2 px-10 pt-8"
+              >
+                Sophia Nakamura
+              </h3>
+              <p class="text-xs text-gray-400 px-10">
+                Flight Systems Design and Analysis
+              </p>
+            </div>
+            <div
+              onclick="selectProfile(this)"
+              class="min-w-auto min-h-[350px] max-w-60 bg-white rounded-lg cursor-pointer flex-shrink-0 crew-card"
+            >
+              <img
+                src="./src/img/Crew_5.png"
+                alt="Logan Patel"
+                class="w-60 h-auto object-cover rounded-lg mb-4 grayscale hover:grayscale-0 transition"
+              />
+              <h3
+                class="font-headingAlt text-sm text-text-secondary mb-2 px-10 pt-8"
+              >
+                Logan Patel
+              </h3>
+              <p class="text-xs text-gray-400 px-10">
+                Capsule Manufacturing and Development
+              </p>
+            </div>
+            <div
+              onclick="selectProfile(this)"
+              class="min-w-auto min-h-[350px] max-w-60 bg-white rounded-lg cursor-pointer flex-shrink-0 crew-card"
+            >
+              <img
+                src="./src/img/Crew_2.png"
+                alt="Dr. Leila Hassan"
+                class="w-60 h-auto object-cover rounded-lg mb-4 grayscale hover:grayscale-0 transition"
+              />
+              <h3
+                class="font-headingAlt text-sm text-text-secondary mb-2 px-10 pt-8"
+              >
+                Dr. Leila Hassan
+              </h3>
+              <p class="text-xs text-gray-400 px-10">
+                Launch and Marine Retrieval Operations
+              </p>
+            </div>
+            <div
+              onclick="selectProfile(this)"
+              class="min-w-auto min-h-[350px] max-w-60 bg-white rounded-lg cursor-pointer flex-shrink-0 crew-card"
+            >
+              <img
+                src="./src/img/Crew_3.png"
+                alt="Ava Moreau"
+                class="w-60 h-auto object-cover rounded-lg mb-4 grayscale hover:grayscale-0 transition"
+              />
+              <h3
+                class="font-headingAlt text-sm text-text-secondary mb-2 px-10 pt-8"
+              >
+                Ava Moreau
+              </h3>
+              <p class="text-xs text-gray-400 px-10">Safety Operations</p>
+            </div>
+            <div
+              onclick="selectProfile(this)"
+              class="min-w-auto min-h-[350px] max-w-60 bg-white rounded-lg cursor-pointer flex-shrink-0 crew-card"
+            >
+              <img
+                src="./src/img/Crew_6.png"
+                alt="Zane Maccagnano"
+                class="w-60 h-auto object-cover rounded-lg mb-4 grayscale hover:grayscale-0 transition"
+              />
+              <h3
+                class="font-headingAlt text-sm text-text-secondary mb-2 px-10 pt-8"
+              >
+                Zane Maccagnano
+              </h3>
+              <p class="text-xs text-gray-400 px-10">
+                Deputy Chief Technology Officer
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- News Section -->
+      <section id="news" class="py-24 px-8 max-w-6xl mx-auto">
+        <h2 class="font-headingAlt text-3xl mb-8 text-text">Latest News</h2>
+        <div class="flex flex-col gap-4 flex-wrap: wrap;">
+          <div
+            class="mx-auto max-w-md overflow-hidden rounded-xl bg-white shadow-md md:max-w-2xl"
+          >
+            <div class="md:flex">
+              <div class="md:shrink-0">
+                <img
+                  class="h-48 w-full object-cover md:h-full md:w-48"
+                  src="./src/img/SpaceCapsule.png"
+                  alt="News space capsule"
+                />
+              </div>
+              <div class="p-8">
+                <div
+                  class="text-sm font-semibold tracking-wide text-indigo-500 uppercase"
+                >
+                  Development Flight 2
+                </div>
+                <a
+                  href="#"
+                  class="mt-1 block text-lg leading-tight font-medium text-black hover:underline"
+                >
+                  Space Perspective Successfully Completes Development Flight 2
+                </a>
+                <p class="mt-2 text-gray-500">
+                  The flight on September 15 marks milestones in space tourism
+                  with first of their kind innovations in marine spaceport
+                  technology, spacecraft design, and flight safety ...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mx-auto max-w-md overflow-hidden rounded-xl bg-white shadow-md md:max-w-2xl"
+          >
+            <div class="md:flex">
+              <div class="md:shrink-0">
+                <img
+                  class="h-48 w-full object-cover md:h-full md:w-48"
+                  src="https://nypost.com/wp-content/uploads/sites/2/2024/01/oreo-encouraging-fans-discover-world-75360069.jpg?resize=1024,576&quality=75&strip=all"
+                  alt="Modern building architecture"
+                />
+              </div>
+              <div class="p-8">
+                <div
+                  class="text-sm font-semibold tracking-wide text-indigo-500 uppercase"
+                >
+                  Oreo launches new Space
+                </div>
+                <a
+                  href="#"
+                  class="mt-1 block text-lg leading-tight font-medium text-black hover:underline"
+                >
+                  Oreo launches new Space Dunk cookies — with a literally
+                  out-of-this-world contest
+                </a>
+                <p class="mt-2 text-gray-500">
+                  Oreo’s newest cookie is out of this world — and the brand
+                  wants you to be, too. America’s favorite cookie is starting
+                  off the new year with the launch of a galaxy-inspired
+                  limited-edition cookie.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mx-auto max-w-md overflow-hidden rounded-xl bg-white shadow-md md:max-w-2xl"
+          >
+            <div class="md:flex">
+              <div class="md:shrink-0">
+                <img
+                  class="h-48 w-full object-cover md:h-full md:w-48"
+                  src="https://d.newsweek.com/en/full/2291697/mercedes-maybach-eqs-suv-space-persepctive.webp?w=790&f=a2613e5edf6c9cd44ca0bdaa06ef9c29"
+                  alt="Modern building architecture"
+                />
+              </div>
+              <div class="p-8">
+                <div
+                  class="text-sm font-semibold tracking-wide text-indigo-500 uppercase"
+                >
+                  Partnership Has Mercedes
+                </div>
+                <a
+                  href="#"
+                  class="mt-1 block text-lg leading-tight font-medium text-black hover:underline"
+                >
+                  Partnership Has Mercedes Reimagining Space Travel as a Luxury
+                  Experience
+                </a>
+                <p class="mt-2 text-gray-500">
+                  There's no Mercedes floating around in Space like there is a
+                  Tesla, but soon space travelers will be able to escape Earth's
+                  atmosphere in Maybach style.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-24 bg-background-light px-8">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <h2 class="font-headingAlt text-3xl text-text mb-4">
+              Contact Information
+            </h2>
+            <p class="font-mono text-sm leading-relaxed mb-6">
+              Any question or remarks? Just write us a message!
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-center space-x-4">
+                <img src="./src/img/phone.svg" alt="Phone" class="w-6 h-6" />
+                <p class="font-mono text-sm">+1012 3456 789</p>
+              </div>
+              <div class="flex items-center space-x-4">
+                <img src="./src/img/mail.svg" alt="Email" class="w-6 h-6" />
+                <p class="font-mono text-sm">demo@gmail.com</p>
+              </div>
+              <div class="flex items-center space-x-4">
+                <img
+                  src="./src/img/website.svg"
+                  alt="Website"
+                  class="w-6 h-6"
+                />
+                <p class="font-mono text-sm">www.pandorafuturistic.com</p>
+              </div>
+              <div class="flex items-center space-x-4">
+                <img
+                  src="./src/img/location.svg"
+                  alt="Location"
+                  class="w-6 h-6"
+                />
+                <p class="font-mono text-sm">
+                  132 Dartmouth Street, Boston, MA, USA
+                </p>
+              </div>
+            </div>
+          </div>
+          <form
+            class="bg-white p-8 rounded-lg grid grid-cols-1 md:grid-cols-2 gap-4"
+          >
+            <input
+              type="text"
+              placeholder="First Name"
+              class="border-b border-gray-300 pb-2 mb-3 font-mono placeholder-gray-500"
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              class="border-b border-gray-300 pb-2 mb-3 font-mono placeholder-gray-500"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              class="border-b border-gray-300 pb-2 mb-3 font-mono placeholder-gray-500"
+            />
+            <input
+              type="tel"
+              placeholder="Phone Number"
+              class="border-b border-gray-300 pb-2 mb-3 font-mono placeholder-gray-500"
+            />
+            <fieldset class="col-span-full">
+              <legend class="font-headingAlt mb-2 text-gray-500">
+                Select Subject?
+              </legend>
+              <div class="flex space-x-4">
+                <label class="flex items-center space-x-2 text-gray-500"
+                  ><input
+                    type="radio"
+                    name="subject"
+                    checked
+                    class="accent-gray-700"
+                  /><span class="font-mono text-sm"
+                    >General Inquiry</span
+                  ></label
+                >
+                <label class="flex items-center space-x-3 text-gray-500"
+                  ><input
+                    type="radio"
+                    name="subject"
+                    class="accent-gray-700"
+                  /><span class="font-mono text-sm">Support</span></label
+                >
+                <label class="flex items-center space-x-3 text-gray-500"
+                  ><input
+                    type="radio"
+                    name="subject"
+                    class="accent-gray-700"
+                  /><span class="font-mono text-sm">Feedback</span></label
+                >
+                <label class="flex items-center space-x-3 text-gray-500"
+                  ><input
+                    type="radio"
+                    name="subject"
+                    class="accent-gray-700"
+                  /><span class="font-mono text-sm">Other</span></label
+                >
+              </div>
+            </fieldset>
+            <textarea
+              rows="4"
+              placeholder="Write your message..."
+              class="col-span-full border-b border-gray-300 pb-2 font-mono placeholder-gray-500"
+            ></textarea>
+            <button
+              type="submit"
+              class="col-span-full bg-[#041527] text-white py-4 rounded-lg"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-background text-text py-12 px-8">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+        <!-- Logo -->
+        <div class="flex items-center justify-center md:justify-start">
+          <img src="./src/img/logo.png" alt="Logo" class="h-24" />
+        </div>
+        <!-- Reach us -->
+        <div>
+          <h3 class="font-headingAlt text-xl mb-4">Reach us</h3>
+          <div class="space-y-2">
+            <div class="flex items-center space-x-2">
+              <img src="./src/img/phone.svg" alt="Phone" class="w-6 h-6" />
+              <p class="font-mono text-sm">+1012 3456 789</p>
+            </div>
+            <div class="flex items-center space-x-2">
+              <img src="./src/img/mail.svg" alt="Email" class="w-6 h-6" />
+              <p class="font-mono text-sm">demo@gmail.com</p>
+            </div>
+            <div class="flex items-center space-x-2">
+              <img
+                src="./src/img/location.svg"
+                alt="Location"
+                class="w-6 h-6"
+              />
+              <p class="font-mono text-sm">
+                132 Dartmouth Street, Boston, MA, USA
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Follow us -->
+        <div>
+          <h3 class="font-headingAlt text-xl mb-4">Follow us</h3>
+          <div class="flex space-x-4">
+            <a href="#"
+              ><img
+                src="./src/img/icons8-facebook.svg"
+                alt="Facebook"
+                class="w-6 h-6"
+            /></a>
+            <a href="#"
+              ><img src="./src/img/icons8-x.svg" alt="X" class="w-6 h-6"
+            /></a>
+            <a href="#"
+              ><img
+                src="./src/img/icons8-instagram.svg"
+                alt="Instagram"
+                class="w-6 h-6"
+            /></a>
+            <a href="#"
+              ><img
+                src="./src/img/icons8-linkedin.svg"
+                alt="LinkedIn"
+                class="w-6 h-6"
+            /></a>
+            <a href="#"
+              ><img
+                src="./src/img/icons8-youtube.svg"
+                alt="YouTube"
+                class="w-6 h-6"
+            /></a>
+          </div>
+        </div>
+        <!-- Quick Links -->
+        <div>
+          <h3 class="font-headingAlt text-xl mb-4">Quick Links</h3>
+          <nav class="space-y-2">
+            <a href="#" class="block font-mono text-sm hover:underline">Home</a>
+            <a href="#about" class="block font-mono text-sm hover:underline"
+              >About us</a
+            >
+            <a
+              href="#experience"
+              class="block font-mono text-sm hover:underline"
+              >Experience</a
+            >
+            <a href="#spaceship" class="block font-mono text-sm hover:underline"
+              >Spaceship</a
+            >
+            <a href="#crew" class="block font-mono text-sm hover:underline"
+              >Crew</a
+            >
+            <a href="#news" class="block font-mono text-sm hover:underline"
+              >News</a
+            >
+            <a href="#contact" class="block font-mono text-sm hover:underline"
+              >Contact Us</a
+            >
+          </nav>
+        </div>
+        <!-- Legal -->
+        <div>
+          <h3 class="font-headingAlt text-xl mb-4">Legal</h3>
+          <nav class="space-y-2">
+            <a href="#" class="block font-mono text-sm hover:underline"
+              >Privacy Policy</a
+            >
+            <a href="#" class="block font-mono text-sm hover:underline"
+              >Terms of Service</a
+            >
+            <a href="#" class="block font-mono text-sm hover:underline"
+              >Contact Us</a
+            >
+          </nav>
+        </div>
+      </div>
+      <p class="mt-8 text-center text-xs">
+        &copy; 2025 Pandora Futuristic Space Travel. All rights reserved.
+      </p>
+    </footer>
+
+    <script>
+      function selectProfile(card) {
+        document
+          .querySelectorAll(".crew-card")
+          .forEach((c) => c.classList.remove("active"));
+        card.classList.add("active");
+      }
+    </script>
+  </body>
+</html>

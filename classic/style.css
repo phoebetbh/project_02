@@ -64,7 +64,7 @@ ul {
 
 /* Hero section with background image */
 section.hero {
-  background-image: url("src/img/hero_bg.png");
+  background-image: url("./src/img/hero_bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-position: 30% 45%;
@@ -72,14 +72,14 @@ section.hero {
 
 /* Mission section with background image */
 section.mission {
-  background-image: url("src/img/Space_Capsule.png");
+  background-image: url("./src/img/Space_Capsule.png");
   background-size: cover;
   background-position: center;
 }
 
 /* Experience section with background image */
 section.experience {
-  background-image: url("src/img/expierience_bg.png");
+  background-image: url("./src/img/expierience_bg.png");
   background-size: 150%;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -89,7 +89,7 @@ section.experience {
 
 /* Vessel section with background image */
 section.vessel {
-  background-image: url("src/img/vessel_bg.png");
+  background-image: url("./src/img/vessel_bg.png");
   background-position: bottom;
   background-repeat: no-repeat;
   height: 100vh;
@@ -307,7 +307,7 @@ nav {
 }
 
 #crew {
-  background-image: url(src/img/Crew_bg.jpg);
+  background-image: url(./src/img/Crew_bg.jpg);
   background-size: cover;
   background-position: end;
   min-height: 120vh;
@@ -937,7 +937,7 @@ footer p {
     display: flex;
   }
   section.hero {
-    background-image: url("src/img/hero_bg.png");
+    background-image: url("./src/img/hero_bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1016,7 +1016,7 @@ footer p {
   }
 
   section.vessel {
-    background-image: url("src/img/vessel_bg.png");
+    background-image: url("./src/img/vessel_bg.png");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1026,7 +1026,7 @@ footer p {
   }
 
   .owner {
-    background-image: url("src/img/Founder_bg.png");
+    background-image: url("./src/img/Founder_bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 120vh;
